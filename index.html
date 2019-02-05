@@ -37,9 +37,11 @@
           <p class="advantage-page">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           <ol class="advantage-list">
             <li class="advantage-item">
-              <h3 class="advantage-title">Настоящий городок</h3>
-              <p class="advantage-number">— №1 —</p>
-              <p class="advantage-item-page">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+              <div class="wrapper-advantage-item">
+                <h3 class="advantage-title">Настоящий городок</h3>
+                <p class="advantage-number">— №1 —</p>
+                <p class="advantage-item-page">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
               <ul class="advantage-promo">
                 <li class="advantage-promo-item">
                   <h3>Жилье</h3>
@@ -56,9 +58,11 @@
               </ul>
             </li>
             <li class="advantage-item">
-              <h3 class="advantage-title">Там есть мост дьявола</h3>
-              <p class="advantage-number">— №2 —</p>
-              <p class="advantage-item-page">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <div class="wrapper-advantage-item">
+                <h3 class="advantage-title">Там есть мост дьявола</h3>
+                <p class="advantage-number">— №2 —</p>
+                <p class="advantage-item-page">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              </div>
             </li>
             <li class="advantage-item">
               <h3 class="advantage-title">Небольшая площадь</h3>
@@ -79,55 +83,63 @@
         </section>
         <section class="search-hotel">
           <h2 class="visually-hidden">Забронировать гостиницу</h2>
-          <p class="search-hotel-page question">Заинтерисовались?</p>
-          <p class="search-hotel-page">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <div class="wrapper-search-hotel">
-            <a class="btn btn-search-hotel"href="#">Поиск гостиницы в Седоне</a>
-            <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
-              <p class="search-hotel-item arrival">
-                <label for="arrival">Дата заезда:</label>
-                <input type="text" id="arrival" name="arrival" placeholder="27 апреля 2017">
-                <a class="btn-arrival" href="#"><span class="visually-hidden">Календарь выбора даты заезда</span></a>
-              </p>
-              <p class="search-hotel-item departure">
-                <label for="departure">Дата выезда:</label>
-                <input type="text" id="departure" name="departure" placeholder="4 июля 2017">
-                <a class="btn-departure" href="#"><span class="visually-hidden">Календарь выбора даты выезда</span></a>
-              </p>
-              <p class="search-hotel-item amount-persons">
-                <label for="person"></label>
-                <input type="text" id="person" name="person" min="1" value="2" pattern="[0-9]{0,100}">
-                <button class="btn-person-add" type="button"><span class="visually-hidden">Увеличить количество гостей на один</span></button>
-                <button class="btn-person-subtract" type="button"><span class="visually-hidden">Уменьшить количество гостей на один</span></button>
-              </p>
-              <p class="search-hotel-item amount-children">
-                <label for="person"></label>
-                <input type="text" id="children" name="children" min="0" value="0" pattern="[0-9]{0,100}">
-                <button class="btn-children-add" type="button"><span class="visually-hidden">Увеличить количество детей на один</span></button>
-                <button class="btn-children-subtract" type="button"><span class="visually-hidden">Уменьшить количество детей на один</span></button>
-              </p>
-              <button class="btn-search-fotm" type="submit">Найти</button>
-            </form>
-          </div>
+          <p class="search-hotel-question">Заинтерисовались?</p>
+          <p class="search-hotel-page">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="btn btn-search-hotel"href="#">Поиск гостиницы в Седоне</a>
+          <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="search-hotel-item arrival">
+              <label for="arrival">Дата заезда:</label>
+              <input type="text" id="arrival" name="arrival" placeholder="27 апреля 2017">
+              <a class="btn-arrival" href="#"><span class="visually-hidden">Календарь выбора даты заезда</span></a>
+            </p>
+            <p class="search-hotel-item departure">
+              <label for="departure">Дата выезда:</label>
+              <input type="text" id="departure" name="departure" placeholder="4 июля 2017">
+              <a class="btn-departure" href="#"><span class="visually-hidden">Календарь выбора даты выезда</span></a>
+            </p>
+            <p class="search-hotel-item amount-persons">
+              <label for="person"></label>
+              <input type="text" id="person" name="person" min="1" value="2" pattern="[0-9]{0,100}">
+              <button class="btn-person-add" type="button"><span class="visually-hidden">Увеличить количество гостей на один</span></button>
+              <button class="btn-person-subtract" type="button"><span class="visually-hidden">Уменьшить количество гостей на один</span></button>
+            </p>
+            <p class="search-hotel-item amount-children">
+              <label for="person"></label>
+              <input type="text" id="children" name="children" min="0" value="0" pattern="[0-9]{0,100}">
+              <button class="btn-children-add" type="button"><span class="visually-hidden">Увеличить количество детей на один</span></button>
+              <button class="btn-children-subtract" type="button"><span class="visually-hidden">Уменьшить количество детей на один</span></button>
+            </p>
+            <button class="btn-search-fotm" type="submit">Найти</button>
+          </form>
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта нашего местоположения</h2>
           <p class="map-image">
-            <img width="1200" height="594" src="" alt="Карта нашего местоположения">
+            <img width="1200" height="594" src="img/map.jpg" alt="Карта местоположения города Седона">
           </p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498629.4797318756!2d-111.97479140551224!3d34.811929352479545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1549322125520" width="1200" height="473" style="border:0" allowfullscreen></iframe>
         </section>
       </main>
       <footer class="main-footer">
         <p class="hashtag-sedona">#visitsedona</p>
         <ul class="footer-social">
           <li class="social-item">
-            <a class="social-link social-tw" href="#"><span class="visually-hidden">Мы в твиттере</span></a>
+            <a class="social-link social-tw" href="#">
+              <span class="visually-hidden">Мы в твиттере</span>
+              <svg class="social-icon tw-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15"><path fill="#000" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
+            </a>
           </li>
           <li class="social-item">
-            <a class="social-link social-fb" href="#"><span class="visually-hidden">Мы в фейсбуке</span></a>
+            <a class="social-link social-fb" href="#">
+              <span class="visually-hidden">Мы в фейсбуке</span>
+              <svg class="social-icon fb-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="22"><path fill="#000" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+            </a>
           </li>
           <li class="social-item">
-            <a class="social-link social-youtube" href="#"><span class="visually-hidden">Мы на YouTube</span></a>
+            <a class="social-link social-youtube" href="#">
+              <span class="visually-hidden">Мы на YouTube</span>
+              <svg class="social-icon youtube-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16"><path fill="#000" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+            </a>
           </li>
         </ul>
         <p class="copyright">
