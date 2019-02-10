@@ -1,3 +1,13 @@
+@keyframes bounce {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
 body {
   margin: 0;
   min-width: 1280px;
@@ -360,13 +370,19 @@ a {
   position: absolute;
   z-index: 1;
 
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   padding: 55px;
   width: 458px;
 
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.open-form {
+  display: flex;
+  animation: bounce 0.7s;
+  transform-origin: top;
 }
 
 .search-hotel-item {
