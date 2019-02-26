@@ -5,7 +5,7 @@
     <title>Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="container">
@@ -75,11 +75,11 @@
                 <div class="cost-input">
                   <p class="cost-min">
                     <label for="input-min">от</label>
-                    <input type="text" id="input-min" name="cost-min" value="0" pattern="[0-9]{0,100}">
+                    <input class="input-min" type="text" id="input-min" name="cost-min" value="0" pattern="[0-9]{0,100}">
                   </p>
                   <p class="cost-max">
                     <label for="input-max">до</label>
-                    <input type="text" id="input-max" name="cost-max" value="3000" pattern="[0-9]{0,100}">
+                    <input class="input-max" type="text" id="input-max" name="cost-max" value="3000" pattern="[0-9]{0,100}">
                   </p>
                 </div>
                 <p class="slider-min-max">
@@ -226,5 +226,6 @@
         </p>
       </footer>
     </div>
+    <script src="js/movementSlider.min.js"></script>
   </body>
 </html>

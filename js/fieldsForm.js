@@ -5,7 +5,6 @@
   var DIFFERENCE = 71;
   var form = document.querySelector('.search-hotel-form');
   var inputs = form.querySelectorAll('input');
-  var dateInputs = form.querySelectorAll('input[type="date"]');
   var btnSearchDate = form.querySelectorAll('.btn-search-date');
   var arrival = form.querySelector('.arrival');
   var departure = form.querySelector('.departure');
@@ -26,26 +25,21 @@
 //установка атрибутов в инпуты формы
   var fieldsForm = function(arrayInputs) {
     [].forEach.call(arrayInputs, function(el) {
-      if(el.type === 'date' || el.type === 'number') {
-        switch (el.name) {
-          case 'arrival':
-            el.type = 'text';
-            el.setAttribute('autocomplete', 'off');
-            el.setAttribute('value', getDate());
-            break;
-          case 'departure':
-            el.type = 'text';
-            el.setAttribute('autocomplete', 'off');
-            el.setAttribute('value', getDate(DIFFERENCE));
-            break;
-          case 'person':
-            el.pattern = '[0-9]{1,100}';
-            break;
-          case 'children':
-            el.pattern = '[0-9]{1,100}';
-            break;
-        }
-        el.type = 'text';
+      switch (el.name) {
+        case 'arrival':
+          el.setAttribute('value', getDate());
+          break;
+        case 'departure':
+          el.setAttribute('value', getDate(DIFFERENCE));
+          break;
+        case 'person':
+          el.type = 'text'
+          el.pattern = '[0-9]{1,100}';
+          break;
+        case 'children':
+          el.type = 'text'
+          el.pattern = '[0-9]{1,100}';
+          break;
       }
     });
   };

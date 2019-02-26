@@ -25,7 +25,7 @@
 
   //запрет на ввод букв в инпуты выбора количества гостей
   var makeInputBan = function(evt) {
-    if((evt.keyCode < 48 || evt.keyCode > 57) && (evt.keyCode < 96 || evt.keyCode > 105) && evt.keyCode !== 8 && evt.keyCode !== 13 && evt.keyCode !== 27 && evt.keyCode !== 37 && evt.keyCode !== 39 && evt.keyCode !== 46) {
+    if((evt.keyCode < 48 || evt.keyCode > 57) && (evt.keyCode < 96 || evt.keyCode > 105) && evt.keyCode !== 8 && evt.keyCode !== 9 && evt.keyCode !== 13 && evt.keyCode !== 27 && evt.keyCode !== 37 && evt.keyCode !== 39 && evt.keyCode !== 46) {
       evt.preventDefault();
     }
   };
